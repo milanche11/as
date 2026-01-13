@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0f14" />
+  <title>Rezervoari — Premier AS</title>
+  <meta name="description" content="Stacionarni i mobilni rezervoari za gorivo, servis i logistiku na terenu." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topbar" id="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__left">
+        <a class="topbar__item" href="tel:+381216469739">
+          <span class="topbar__label">Telefon:</span> +381 21 6469 739
+        </a>
+        <a class="topbar__item" href="mailto:info@firma.rs">
+          <span class="topbar__label">Email:</span> info@premieras.com
+        </a>
+        <span class="topbar__item">
+          <span class="topbar__label">Radno vreme:</span> Pon–Sub 08:00–18:00
+        </span>
+      </div>
+      <div class="topbar__right" aria-label="Društvene mreže">
+        <a class="social" href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H8v-3h2.4V9.8c0-2.4 1.4-3.7 3.6-3.7 1 0 2 .2 2 .2v2.2h-1.1c-1.1 0-1.4.7-1.4 1.4V12H16l-.5 3h-2.4v7A10 10 0 0 0 22 12Z"/></svg>
+        </a>
+        <a class="social" href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm-5 4.5A5.5 5.5 0 1 1 6.5 14 5.5 5.5 0 0 1 12 8.5Zm0 2A3.5 3.5 0 1 0 15.5 14 3.5 3.5 0 0 0 12 10.5ZM18 6.8a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/></svg>
+        </a>
+        <a class="social" href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23 22h-6.2l-4.8-6.2L6.6 22H3.5l7.3-8.4L1 2h6.4l4.4 5.7L18.9 2Zm-1.1 18h1.7L6.2 3.9H4.4L17.8 20Z"/></svg>
+        </a>
+        <a class="social" href="#" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2a3 3 0 0 0-2.1-2.1C17.7 4.6 12 4.6 12 4.6s-5.7 0-7.5.5A3 3 0 0 0 2.4 7.2 31 31 0 0 0 2 12a31 31 0 0 0 .4 4.8 3 3 0 0 0 2.1 2.1c1.8.5 7.5.5 7.5.5s5.7 0 7.5-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 22 12a31 31 0 0 0-.4-4.8ZM10 15.5v-7l6 3.5-6 3.5Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <header class="header" id="siteHeader">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="Početna">
+        <img class="brand__logo" src="logo.png" alt="Premier AS d.o.o. logo" />
+      </a>
+
+      <div class="header__right">
+        <div class="lang" aria-label="Izbor jezika">
+          <a class="lang__btn is-active" href="#" aria-label="Srpski">
+            <img src="flag-sr.png" alt="SR" />
+            <span>SR</span>
+          </a>
+          <a class="lang__btn" href="#" aria-label="English">
+            <img src="flag-en.png" alt="EN" />
+            <span>EN</span>
+          </a>
+        </div>
+
+        <a class="btn btn--offer" href="/aktuelna-ponuda">
+          <span class="cta-long">Aktuelna ponuda</span>
+          <span class="cta-short">Ponuda</span>
+        </a>
+
+        <button class="hamburger" id="hamburger" aria-label="Otvori meni" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <nav class="nav" aria-label="Glavni meni">
+        <a href="o-nama.html">O nama</a>
+        <a href="servis.html">Servis</a>
+        <a href="rezervni-delovi.html">Rezervni delovi</a>
+        <a href="hidraulika.html">Hidraulika</a>
+        <a href="rezervoari.html">Rezervoari</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+    </div>
+
+    <div class="mobile" id="mobileMenu" hidden>
+      <a href="o-nama.html">O nama</a>
+      <a href="servis.html">Servis</a>
+      <a href="rezervni-delovi.html">Rezervni delovi</a>
+      <a href="hidraulika.html">Hidraulika</a>
+      <a href="rezervoari.html">Rezervoari</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a class="mobile__offer" href="/aktuelna-ponuda">Aktuelna ponuda</a>
+
+      <div class="mobile__lang">
+        <a class="mobile__langBtn is-active" href="#" aria-label="Srpski">
+          <img src="flag-sr.png" alt="SR" /> SR
+        </a>
+        <a class="mobile__langBtn" href="#" aria-label="English">
+          <img src="flag-en.png" alt="EN" /> EN
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero" style="--page-hero-img: url('assets/service-rezervoari.jpg');">
+    <div class="container page-hero__inner">
+      <p class="page-hero__eyebrow">Rezervoari i logistika</p>
+      <h1 class="page-hero__title">Stacionarni i mobilni rezervoari</h1>
+      <p class="page-hero__lead">
+        Rešenja za skladištenje i distribuciju goriva prilagođena terenu, transportu i bezbednosti.
+      </p>
+      <div class="page-hero__actions">
+        <a class="btn btn--primary" href="kontakt.html">Zatražite ponudu</a>
+        <a class="btn btn--outline" href="servis.html">Servisna podrška</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title">Tipovi rezervoara</h2>
+        <p class="section__lead">Različiti kapaciteti i konfiguracije prema vašim operacijama.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <h3 class="card__title">Stacionarni</h3>
+          <p class="card__text">Idealni za centralna skladišta i gradilišta sa stalnom potrošnjom.</p>
+        </article>
+        <article class="card">
+          <h3 class="card__title">Mobilni</h3>
+          <p class="card__text">Fleksibilna rešenja za terenske ekipe i udaljene lokacije.</p>
+        </article>
+        <article class="card">
+          <h3 class="card__title">Specijalne konfiguracije</h3>
+          <p class="card__text">Prilagođavanje volumena, pumpi i sigurnosnih sistema.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--muted">
+    <div class="container split">
+      <div class="split__content">
+        <h2 class="section__title">Bezbednost i usklađenost</h2>
+        <p class="section__lead">
+          Ugrađujemo sigurnosne ventile, zaštite i kontrolne sisteme u skladu sa propisima.
+        </p>
+        <ul class="list-checks">
+          <li>Kontrola curenja i dupli zid</li>
+          <li>Senzori nivoa i alarmi</li>
+          <li>Dokumentacija i sertifikati</li>
+        </ul>
+      </div>
+      <div class="split__media">
+        <img src="assets/about.jpg" alt="Rezervoari za gorivo" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title">Usluge na lokaciji</h2>
+        <p class="section__lead">Isporuka, montaža i obuka osoblja za bezbednu upotrebu.</p>
+      </div>
+      <div class="process">
+        <div class="process__step">
+          <span class="process__number">01</span>
+          <div>
+            <h3 class="process__title">Procena terena</h3>
+            <p class="process__text">Analiza lokacije i definisanje kapaciteta rezervoara.</p>
+          </div>
+        </div>
+        <div class="process__step">
+          <span class="process__number">02</span>
+          <div>
+            <h3 class="process__title">Instalacija</h3>
+            <p class="process__text">Montaža, povezivanje i testiranje sistema pre puštanja u rad.</p>
+          </div>
+        </div>
+        <div class="process__step">
+          <span class="process__number">03</span>
+          <div>
+            <h3 class="process__title">Obuka</h3>
+            <p class="process__text">Uputstva za rukovanje i plan održavanja.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--accent">
+    <div class="container cta-band">
+      <div>
+        <h2 class="section__title">Tražite rezervoar po meri?</h2>
+        <p class="section__lead">Pošaljite specifikacije, a mi pripremamo predlog rešenja.</p>
+      </div>
+      <a class="btn btn--offer" href="kontakt.html">Kontaktirajte nas</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <h4 class="footer__title">O NAMA</h4>
+        <p class="footer__text">
+          Osnova delatnosti firme je prodaja, poljoprivredne i građevniske mehanizacije,
+          rezervnih delova i usluga servisa, na celoj teritoriji Srbije.
+        </p>
+        <p class="footer__text">
+          Strategija firme od samog osnivanja je konstantni i kontinuirani razvoj postrodajne podrške
+          kao i stručnog mobilnog servisa u garantnom i vangarantnom roku.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="footer__title">BRZI LINKOVI</h4>
+        <ul class="footer__list">
+          <li><a href="o-nama.html">O nama</a></li>
+          <li><a href="servis.html">Servis</a></li>
+          <li><a href="rezervni-delovi.html">Rezervni delovi</a></li>
+          <li><a href="hidraulika.html">Hidraulika</a></li>
+          <li><a href="rezervoari.html">Rezervoari</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer__title">KONTAKT INFO</h4>
+
+        <div class="footer__block">
+          <div class="footer__label">Adresa</div>
+          <div class="footer__value">21000 Novi Sad, Rumenački put 93b, Srbija</div>
+          <div class="footer__value"><a href="tel:+381216469739">Telefon: +381 (0)21 6469 739</a></div>
+          <div class="footer__value"><a href="tel:+381216466720">Telefon: +381 (0)21 6466 720</a></div>
+        </div>
+
+        <div class="footer__block">
+          <div class="footer__label">Adresa</div>
+          <div class="footer__value">11000 Beograd, Partizanske vode 8a, Srbija</div>
+          <div class="footer__value"><a href="tel:+381112510958">Telefon: +381 (0)11 25 10 958</a></div>
+        </div>
+
+        <div class="footer__block">
+          <div class="footer__label">E-mail</div>
+          <div class="footer__value"><a href="mailto:info@premierasdoo.com">info@premierasdoo.com</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <div class="footer__legal">
+        <a href="/politika-privatnosti">Politika privatnosti</a>
+        <span class="sep">•</span>
+        <a href="/uslovi-koriscenja">Uslovi korišćenja</a>
+        <span class="sep">•</span>
+        <a href="/politika-kolacica">Politika kolačića</a>
+        <span class="sep">•</span>
+        <a href="/impresum">Impresum</a>
+      </div>
+
+      <div class="footer__copy">
+        © <span id="year"></span> Premier AS d.o.o. Sva prava zadržana.
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
