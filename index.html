@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0f14" />
+  <title>JCB Mašine — Prodaja i Servis | Naziv Firme</title>
+  <meta name="description" content="Prodaja, servis i originalni delovi za JCB mašine. Brza podrška, terenski servis i pouzdana isporuka." />
+
+  <!-- Fonts (sličan “industrijski” osećaj: Inter + Oswald) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+  
+</head>
+
+<body>
+ 
+<!-- TOPBAR -->
+<div class="topbar" id="topbar">
+  <div class="container topbar__inner">
+    <div class="topbar__left">
+      <a class="topbar__item" href="tel:+381216469739">
+        <span class="topbar__label">Telefon:</span> +381 21 6469 739
+      </a>
+      <a class="topbar__item" href="mailto:info@firma.rs">
+        <span class="topbar__label">Email:</span> info@premieras.com
+      </a>
+      <span class="topbar__item">
+        <span class="topbar__label">Radno vreme:</span> Pon–Sub 08:00–18:00
+      </span>
+    </div>
+
+    <div class="topbar__right" aria-label="Društvene mreže">
+      <a class="social" href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H8v-3h2.4V9.8c0-2.4 1.4-3.7 3.6-3.7 1 0 2 .2 2 .2v2.2h-1.1c-1.1 0-1.4.7-1.4 1.4V12H16l-.5 3h-2.4v7A10 10 0 0 0 22 12Z"/></svg>
+      </a>
+      <a class="social" href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm-5 4.5A5.5 5.5 0 1 1 6.5 14 5.5 5.5 0 0 1 12 8.5Zm0 2A3.5 3.5 0 1 0 15.5 14 3.5 3.5 0 0 0 12 10.5ZM18 6.8a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/></svg>
+      </a>
+      <a class="social" href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23 22h-6.2l-4.8-6.2L6.6 22H3.5l7.3-8.4L1 2h6.4l4.4 5.7L18.9 2Zm-1.1 18h1.7L6.2 3.9H4.4L17.8 20Z"/></svg>
+      </a>
+      <a class="social" href="#" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2a3 3 0 0 0-2.1-2.1C17.7 4.6 12 4.6 12 4.6s-5.7 0-7.5.5A3 3 0 0 0 2.4 7.2 31 31 0 0 0 2 12a31 31 0 0 0 .4 4.8 3 3 0 0 0 2.1 2.1c1.8.5 7.5.5 7.5.5s5.7 0 7.5-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 22 12a31 31 0 0 0-.4-4.8ZM10 15.5v-7l6 3.5-6 3.5Z"/></svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER  -->
+  <header class="header" id="siteHeader">
+    <div class="container header__inner">
+      <a class="brand" href="/" aria-label="Početna">
+        <img class="brand__logo" src="logo.png" alt="Premier AS d.o.o. logo" />
+      </a>
+
+      <!-- desno: jezik + CTA + burger -->
+      <div class="header__right">
+        <div class="lang" aria-label="Izbor jezika">
+          <a class="lang__btn is-active" href="#" aria-label="Srpski">
+            <img src="flag-sr.png" alt="SR" />
+            <span>SR</span>
+          </a>
+          <a class="lang__btn" href="#" aria-label="English">
+            <img src="flag-en.png" alt="EN" />
+            <span>EN</span>
+          </a>
+        </div>
+
+        <a class="btn btn--offer" href="/aktuelna-ponuda">
+          <span class="cta-long">Aktuelna ponuda</span>
+          <span class="cta-short">Ponuda</span>
+        </a>
+
+        <button class="hamburger" id="hamburger" aria-label="Otvori meni" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <!-- MENI: drugi red, centar -->
+      <nav class="nav" aria-label="Glavni meni">
+        <a href="/">O nama</a>
+        <a href="/servis">Servis</a>
+        <a href="/rezervni-delovi">Rezervni delovi</a>
+        <a href="/hidraulika">Hidraulika</a>
+        <a href="/rezervoari">Rezervoari</a>
+        <a href="/kontakt">Kontakt</a>
+      </nav>
+    </div>
+
+    <!-- Mobile meni -->
+    <div class="mobile" id="mobileMenu" hidden>
+      <a href="/">O nama</a>
+      <a href="/servis">Servis</a>
+      <a href="/rezervni-delovi">Rezervni delovi</a>
+      <a href="/hidraulika">Hidraulika</a>
+      <a href="/rezervoari">Rezervoari</a>
+      <a href="/kontakt">Kontakt</a>
+      <a class="mobile__offer" href="/aktuelna-ponuda">Aktuelna ponuda</a>
+
+      <!-- Jezik u mobile meniju (opciono, UX-friendly) -->
+      <div class="mobile__lang">
+        <a class="mobile__langBtn is-active" href="#" aria-label="Srpski">
+          <img src="flag-sr.png" alt="SR" /> SR
+        </a>
+        <a class="mobile__langBtn" href="#" aria-label="English">
+          <img src="flag-en.png" alt="EN" /> EN
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN (placeholder) -->
+
+<section class="hero" style="--hero-img: url('assets/hero.jpg');">
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <h1 class="hero__title">SERVIS BEZ ZASTOJA</h1>
+      <p class="hero__subtitle">
+        Prodaja, servis i rezervni delovi za građevinsku i poljoprivrednu mehanizaciju širom Srbije.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="/kontakt">Zatraži ponudu</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="tiles" aria-label="Usluge">
+  <div class="container">
+    <div class="tiles__grid">
+
+      <a class="tile" href="/prodaja" style="--tile-img:url('assets/service-prodaja.jpg');">
+        <div class="tile__content">
+          <h3 class="tile__title">Prodaja</h3>
+          <p class="tile__subtitle">Nove i polovne mašine uz podršku savetnika, garanciju i obuku.</p>
+          <span class="tile__btn">Više</span>
+        </div>
+      </a>
+
+      <a class="tile" href="/rezervni-delovi" style="--tile-img:url('assets/service-delovi.jpg');">
+        <div class="tile__content">
+          <h3 class="tile__title">Rezervni delovi</h3>
+          <p class="tile__subtitle">Brza isporuka sa EU lagera i 10.000+ pozicija u Novom Sadu.</p>
+          <span class="tile__btn">Više</span>
+        </div>
+      </a>
+
+      <a class="tile" href="/servis" style="--tile-img:url('assets/service-servis.jpg');">
+        <div class="tile__content">
+          <h3 class="tile__title">Servis</h3>
+          <p class="tile__subtitle">Teren i radionica — stručan tim za pouzdanu podršku u radu.</p>
+          <span class="tile__btn">Više</span>
+        </div>
+      </a>
+
+      <a class="tile" href="/hidraulika" style="--tile-img:url('assets/service-hidraulika.jpg');">
+        <div class="tile__content">
+          <h3 class="tile__title">Hidraulička creva</h3>
+          <p class="tile__subtitle">Kvalitetne komponente i rešenja proverena u zahtevnim uslovima.</p>
+          <span class="tile__btn">Više</span>
+        </div>
+      </a>
+		<a class="tile tile--wide" href="/rezervoari" style="--tile-img:url('assets/service-rezervoari.jpg');">
+		  <div class="tile__content">
+			<h3 class="tile__title">Rezervoari</h3>
+			<p class="tile__subtitle">Stacionarni i mobilni rezervoari — rešenja prilagođena terenu i logistici.</p>
+			<span class="tile__btn">Više</span>
+		  </div>
+		</a>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="why" id="zasto">
+  <div class="container">
+    <div class="why__head">
+      <h2 class="why__title">ZAŠTO IZABRATI NAS?</h2>
+      <p class="why__lead">Sve na jednom mestu — brža kupovina, sigurniji rad i podrška kad je najpotrebnije.</p>
+    </div>
+
+    <div class="why__grid">
+      <article class="why-card">
+        <h3 class="why-card__title">Sve na jednom mestu</h3>
+        <p class="why-card__text">Prodaja, delovi i servis — bez gubljenja vremena.</p>
+      </article>
+
+      <article class="why-card">
+        <h3 class="why-card__title">Originalni delovi</h3>
+        <p class="why-card__text">Pouzdanost i duži vek mašine uz pravi izbor delova.</p>
+      </article>
+
+      <article class="why-card">
+        <h3 class="why-card__title">Servis bez zastoja</h3>
+        <p class="why-card__text">Radionica, dijagnostika i mobilni tim za intervenciju.</p>
+      </article>
+
+      <article class="why-card">
+        <h3 class="why-card__title">Iskustvo i poverenje</h3>
+        <p class="why-card__text">Tradicionalno poslovanje i preko 1.000 zadovoljnih klijenata.</p>
+      </article>
+    </div>
+
+    <div class="why__actions">
+      <a class="btn btn--offer" href="#kontakt">Zatraži ponudu</a>
+      <a class="btn btn--outline" href="#o-nama">Saznaj više</a>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="o-nama">
+  <div class="container">
+    <div class="about__grid">
+      <div class="about__media">
+        <!-- ubaci sliku -->
+        <img src="assets/about.jpg" alt="Premier AS">
+      </div>
+
+      <div class="about__content">
+        <h2 class="about__title">O NAMA</h2>
+        <p class="about__lead">
+          Premier AS posluje od 1992. godine i fokusiran je na mehanizaciju, delove i servis širom Srbije.
+        </p>
+
+        <div class="about__timeline">
+          <div class="about__item">
+            <div class="about__year">1992</div>
+            <div class="about__text">Osnovan PP „Premier“.</div>
+          </div>
+          <div class="about__item">
+            <div class="about__year">1995</div>
+            <div class="about__text">Transformacija u „Premier“ doo.</div>
+          </div>
+          <div class="about__item">
+            <div class="about__year">1996–1997</div>
+            <div class="about__text">„Premier Kovi“ doo i ovlašćeni pod-diler u Srbiji.</div>
+          </div>
+          <div class="about__item">
+            <div class="about__year">2001</div>
+            <div class="about__text">Nastup kao 100% domaća firma — „Premier AS“ doo.</div>
+          </div>
+        </div>
+
+        <div class="about__actions">
+          <a class="btn btn--offer" href="/o-nama">Više o nama</a>
+          <a class="btn btn--outline" href="#usluge">Pogledaj usluge</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  <!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer__grid">
+
+    <div>
+      <h4 class="footer__title">O NAMA</h4>
+      <p class="footer__text">
+        Osnova delatnosti firme je prodaja, poljoprivredne i građevniske mehanizacije,
+        rezervnih delova i usluga servisa, na celoj teritoriji Srbije.
+      </p>
+      <p class="footer__text">
+        Strategija firme od samog osnivanja je konstantni i kontinuirani razvoj postrodajne podrške
+        kao i stručnog mobilnog servisa u garantnom i vangarantnom roku.
+      </p>
+    </div>
+
+    <div>
+      <h4 class="footer__title">BRZI LINKOVI</h4>
+      <ul class="footer__list">
+        <li><a href="/">O nama</a></li>
+        <li><a href="/servis">Servis</a></li>
+        <li><a href="/rezervni-delovi">Rezervni delovi</a></li>
+        <li><a href="/hidraulika">Hidraulika</a></li>
+        <li><a href="/rezervoari">Rezervoari</a></li>
+        <li><a href="/kontakt">Kontakt</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="footer__title">KONTAKT INFO</h4>
+
+      <div class="footer__block">
+        <div class="footer__label">Adresa</div>
+        <div class="footer__value">21000 Novi Sad, Rumenački put 93b, Srbija</div>
+        <div class="footer__value"><a href="tel:+381216469739">Telefon: +381 (0)21 6469 739</a></div>
+        <div class="footer__value"><a href="tel:+381216466720">Telefon: +381 (0)21 6466 720</a></div>
+      </div>
+
+      <div class="footer__block">
+        <div class="footer__label">Adresa</div>
+        <div class="footer__value">11000 Beograd, Partizanske vode 8a, Srbija</div>
+        <div class="footer__value"><a href="tel:+381112510958">Telefon: +381 (0)11 25 10 958</a></div>
+      </div>
+
+      <div class="footer__block">
+        <div class="footer__label">E-mail</div>
+        <div class="footer__value"><a href="mailto:info@premierasdoo.com">info@premierasdoo.com</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer__bottom">
+    <div class="footer__legal">
+      <a href="/politika-privatnosti">Politika privatnosti</a>
+      <span class="sep">•</span>
+      <a href="/uslovi-koriscenja">Uslovi korišćenja</a>
+      <span class="sep">•</span>
+      <a href="/politika-kolacica">Politika kolačića</a>
+      <span class="sep">•</span>
+      <a href="/impresum">Impresum</a>
+    </div>
+
+    <div class="footer__copy">
+      © <span id="year"></span> Premier AS d.o.o. Sva prava zadržana.
+    </div>
+  </div>
+</footer>
+
+
+
+  <script>
+    // Topbar hide on scroll
+    (function () {
+      const threshold = 10;
+      window.addEventListener("scroll", () => {
+        const y = window.scrollY || document.documentElement.scrollTop;
+        if (y > threshold) document.body.classList.add("is-scrolled");
+        else document.body.classList.remove("is-scrolled");
+      }, { passive: true });
+    })();
+
+    // Mobile menu toggle
+    (function(){
+      const burger = document.getElementById("hamburger");
+      const menu = document.getElementById("mobileMenu");
+      if(!burger || !menu) return;
+
+      burger.addEventListener("click", () => {
+        const isOpen = burger.getAttribute("aria-expanded") === "true";
+        burger.setAttribute("aria-expanded", String(!isOpen));
+        menu.hidden = isOpen;
+      });
+    })();
+
+    // Footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
+</html>
