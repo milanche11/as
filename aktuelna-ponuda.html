@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#0b0f14" />
-  <title>Hidraulika — Premier AS</title>
-  <meta name="description" content="Hidraulička creva, spojnice i servis hidraulike za zahtevne uslove rada." />
+  <title>Aktuelna ponuda — Premier AS</title>
+  <meta name="description" content="Pregled aktuelne ponude mašina uz detaljne specifikacije i mogućnost rezervacije." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,6 +26,7 @@
           <span class="topbar__label">Radno vreme:</span> Pon–Sub 08:00–18:00
         </span>
       </div>
+
       <div class="topbar__right" aria-label="Društvene mreže">
         <a class="social" href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H8v-3h2.4V9.8c0-2.4 1.4-3.7 3.6-3.7 1 0 2 .2 2 .2v2.2h-1.1c-1.1 0-1.4.7-1.4 1.4V12H16l-.5 3h-2.4v7A10 10 0 0 0 22 12Z"/></svg>
@@ -101,105 +102,166 @@
     </div>
   </header>
 
-  <section class="page-hero" style="--page-hero-img: url('assets/service-hidraulika.jpg');">
+  <section class="page-hero page-hero--compact" style="--page-hero-img: url('assets/hero.jpg');">
     <div class="container page-hero__inner">
-      <p class="page-hero__eyebrow">Hidraulička rešenja</p>
-      <h1 class="page-hero__title">Hidraulika i creva</h1>
-      <p class="page-hero__lead">
-        Izrada hidrauličkih creva po meri, dijagnostika i servis hidrauličnih sistema uz proverene
-        komponente.
-      </p>
-      <div class="page-hero__actions">
-        <a class="btn btn--primary" href="kontakt.html">Zatražite ponudu</a>
-        <a class="btn btn--outline" href="servis.html">Servisna podrška</a>
+      <div class="breadcrumbs">
+        <a href="index.html">Početna</a>
+        <span>/</span>
+        <span>Aktuelna ponuda</span>
       </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="section__head">
-        <h2 class="section__title">Naše usluge</h2>
-        <p class="section__lead">Od brzog presecanja i krimpovanja do kompletne analize sistema.</p>
-      </div>
-      <div class="cards">
-        <article class="card">
-          <h3 class="card__title">Izrada creva</h3>
-          <p class="card__text">Creva svih pritisaka, po uzorku ili specifikaciji proizvođača.</p>
-        </article>
-        <article class="card">
-          <h3 class="card__title">Hidraulična dijagnostika</h3>
-          <p class="card__text">Merenje pritiska, kontrola curenja i otklanjanje gubitaka snage.</p>
-        </article>
-        <article class="card">
-          <h3 class="card__title">Preventiva</h3>
-          <p class="card__text">Inspekcija spojeva i plan zamene potrošnih delova.</p>
-        </article>
-      </div>
+      <h1 class="page-hero__title">Aktuelna ponuda</h1>
+      <p class="page-hero__lead">Pregled dostupnih mašina uz detalje, specifikacije i brzu rezervaciju.</p>
     </div>
   </section>
 
   <section class="section section--muted">
-    <div class="container split">
-      <div class="split__content">
-        <h2 class="section__title">Komponente premium kvaliteta</h2>
-        <p class="section__lead">
-          Koristimo pouzdane proizvođače kako bismo obezbedili dug vek trajanja i sigurnost u radu.
-        </p>
-        <div class="pill-list">
-          <span>Parker</span>
-          <span>Manuli</span>
-          <span>Stauff</span>
-          <span>Eaton</span>
-          <span>Hydac</span>
-          <span>Gates</span>
-        </div>
+    <div class="container offer-controls">
+      <div>
+        <h2 class="section__title">Filter ponude</h2>
+        <p class="section__lead">Pronađite mašinu po nameni, godini ili broju radnih sati.</p>
       </div>
-      <div class="split__media">
-        <img src="assets/service-prodaja.jpg" alt="Hidrauličke komponente" />
+      <div class="offer-controls__actions">
+        <div class="select-field">
+          <label for="sort">Sortiranje</label>
+          <select id="sort" name="sort">
+            <option>Najnovije</option>
+            <option>Najniža cena</option>
+            <option>Najviše sati</option>
+            <option>Najnovija godina</option>
+          </select>
+        </div>
+        <div class="select-field">
+          <label for="category">Kategorija</label>
+          <select id="category" name="category">
+            <option>Mini bageri</option>
+            <option>Utovarivači</option>
+            <option>Telehendleri</option>
+            <option>Prikolice</option>
+          </select>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="section">
-    <div class="container">
-      <div class="section__head">
-        <h2 class="section__title">Zašto je važno održavanje?</h2>
-        <p class="section__lead">Pravovremena zamena creva i brtvi sprečava veće kvarove.</p>
-      </div>
-      <div class="process">
-        <div class="process__step">
-          <span class="process__number">01</span>
-          <div>
-            <h3 class="process__title">Bezbednost</h3>
-            <p class="process__text">Smanjuje rizik od iznenadnog pucanja i curenja ulja.</p>
+    <div class="container offer-list">
+      <article class="offer-card">
+        <img class="offer-card__image" src="assets/service-prodaja.jpg" alt="JCB 8026" />
+        <div class="offer-card__body">
+          <div class="offer-card__header">
+            <div>
+              <p class="offer-card__code">8026</p>
+              <p class="offer-card__title">JCB mini bager sa potpuno zatvorenом kabinom</p>
+              <p class="offer-card__desc">Manual Quick Hitch · Amber Beacon · LED rasveta · Radio</p>
+            </div>
+            <div class="offer-card__price">€22.750</div>
+          </div>
+          <div class="offer-card__meta">
+            <div>
+              <span>Proizvođač</span>
+              <strong>JCB</strong>
+            </div>
+            <div>
+              <span>Rang</span>
+              <strong>Mini / Midi bageri</strong>
+            </div>
+            <div>
+              <span>Sati</span>
+              <strong>293h</strong>
+            </div>
+            <div>
+              <span>Godina</span>
+              <strong>2023</strong>
+            </div>
+          </div>
+          <div class="offer-card__actions">
+            <a class="btn btn--primary" href="single-product.html">Detalji</a>
+            <a class="btn btn--outline" href="kontakt.html">Rezerviši</a>
           </div>
         </div>
-        <div class="process__step">
-          <span class="process__number">02</span>
-          <div>
-            <h3 class="process__title">Ušteda</h3>
-            <p class="process__text">Preventiva je uvek povoljnija od velikih popravki.</p>
+      </article>
+
+      <article class="offer-card">
+        <img class="offer-card__image" src="assets/service-servis.jpg" alt="JCB 8026" />
+        <div class="offer-card__body">
+          <div class="offer-card__header">
+            <div>
+              <p class="offer-card__code">8026</p>
+              <p class="offer-card__title">JCB mini bager sa grejanom kabinom</p>
+              <p class="offer-card__desc">Glazed Heated Cab · Radio · Suspension Seat</p>
+            </div>
+            <div class="offer-card__price">€18.950</div>
+          </div>
+          <div class="offer-card__meta">
+            <div>
+              <span>Proizvođač</span>
+              <strong>JCB</strong>
+            </div>
+            <div>
+              <span>Rang</span>
+              <strong>Mini / Midi bageri</strong>
+            </div>
+            <div>
+              <span>Sati</span>
+              <strong>2.017h</strong>
+            </div>
+            <div>
+              <span>Godina</span>
+              <strong>2021</strong>
+            </div>
+          </div>
+          <div class="offer-card__actions">
+            <a class="btn btn--primary" href="single-product.html">Detalji</a>
+            <a class="btn btn--outline" href="kontakt.html">Rezerviši</a>
           </div>
         </div>
-        <div class="process__step">
-          <span class="process__number">03</span>
-          <div>
-            <h3 class="process__title">Produžen vek mašine</h3>
-            <p class="process__text">Stabilan pritisak garantuje optimalan rad sistema.</p>
+      </article>
+
+      <article class="offer-card">
+        <img class="offer-card__image" src="assets/service-delovi.jpg" alt="JCB 8025" />
+        <div class="offer-card__body">
+          <div class="offer-card__header">
+            <div>
+              <p class="offer-card__code">8025</p>
+              <p class="offer-card__title">JCB mini bager — premium paket</p>
+              <p class="offer-card__desc">Amber & Green Beacons · Zero Tail Swing · LED rasveta</p>
+            </div>
+            <div class="offer-card__price">€22.000</div>
+          </div>
+          <div class="offer-card__meta">
+            <div>
+              <span>Proizvođač</span>
+              <strong>JCB</strong>
+            </div>
+            <div>
+              <span>Rang</span>
+              <strong>Mini / Midi bageri</strong>
+            </div>
+            <div>
+              <span>Sati</span>
+              <strong>907h</strong>
+            </div>
+            <div>
+              <span>Godina</span>
+              <strong>2023</strong>
+            </div>
+          </div>
+          <div class="offer-card__actions">
+            <a class="btn btn--primary" href="single-product.html">Detalji</a>
+            <a class="btn btn--outline" href="kontakt.html">Rezerviši</a>
           </div>
         </div>
-      </div>
+      </article>
     </div>
   </section>
 
   <section class="section section--accent">
     <div class="container cta-band">
       <div>
-        <h2 class="section__title">Potrebno vam je crevo po meri?</h2>
-        <p class="section__lead">Pošaljite dimenzije i pritisak, a mi izrađujemo rešenje odmah.</p>
+        <h2 class="section__title">Ne nalazite ono što tražite?</h2>
+        <p class="section__lead">Pošaljite upit i pronaći ćemo najbolju opciju za vas.</p>
       </div>
-      <a class="btn btn--offer" href="kontakt.html">Kontaktirajte nas</a>
+      <a class="btn btn--offer" href="kontakt.html">Pošaljite upit</a>
     </div>
   </section>
 
