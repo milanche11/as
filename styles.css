@@ -340,20 +340,32 @@ body.is-scrolled .topbar{
   .brand__logo{ width:200px; height:40px; }
 
   .footer__grid{ grid-template-columns: 1fr; }
+
+  /* sakrij SR/EN i Aktuelna ponuda u gornjem headeru */
+  .header__right .lang{ display:none !important; }
+  .header__right .btn--offer{ display:none !important; }
+
+  /* burger ostaje vidljiv */
+  .hamburger{ display:inline-block !important; }
+
+  /* malo zategni spacing kad ostane samo burger */
+  .header__right{ gap: 8px; }
 }
 
-/* Topbar: mobilni raspored (2 kolone + socijalne u sredini) */
+/* Topbar: mobilni raspored (telefon pa email + socijalne ispod) */
 @media (max-width: 640px){
   .topbar__inner{ gap:8px; padding:8px 0; }
 
   .topbar__left{
     width:100%;
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap:8px;
   }
 
-  /* radno vreme skloni iz topbara (previše) */
+  /* Osiguraj redosled: telefon (1), email (2), radno vreme (3) */
+  .topbar__left .topbar__item:nth-child(1){ order: 1; }
+  .topbar__left .topbar__item:nth-child(2){ order: 2; }
   .topbar__left .topbar__item:nth-child(3){ display:none; }
 
   /* skloni label, ostavi samo vrednosti */
@@ -361,7 +373,7 @@ body.is-scrolled .topbar{
 
   .topbar__item{
     font-size:.85rem;
-    justify-content:center;
+    justify-content:flex-start;
     overflow:hidden;
     text-overflow: ellipsis;
   }
@@ -370,6 +382,7 @@ body.is-scrolled .topbar{
     width:100%;
     justify-content:center;
     gap:8px;
+    margin-top: 6px;
   }
   .social{ width:32px; height:32px; border-radius:10px; }
   .social svg{ width:17px; height:17px; }
@@ -389,50 +402,6 @@ body.is-scrolled .topbar{
 
   .btn{ padding: 10px 10px; font-size:.92rem; }
   .btn--offer{ padding: 10px 9px; }
-}
-/* =========================
-   HIDE SR/EN + CTA IN HEADER ON MOBILE
-   (ostaju u mobile meniju)
-   ========================= */
-@media (max-width: 980px){
-  /* sakrij SR/EN i Aktuelna ponuda u gornjem headeru */
-  .header__right .lang{ display:none !important; }
-  .header__right .btn--offer{ display:none !important; }
-
-  /* burger ostaje vidljiv */
-  .hamburger{ display:inline-block !important; }
-
-  /* malo zategni spacing kad ostane samo burger */
-  .header__right{ gap: 8px; }
-}
-/* =========================
-   TOPBAR MOBILE: telefon pa email (u 2 reda)
-   ========================= */
-@media (max-width: 640px){
-  /* Levo: jedna kolona (telefon pa email) */
-  .topbar__left{
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    gap: 8px !important;
-    width: 100% !important;
-  }
-
-  /* Osiguraj redosled: telefon (1), email (2), radno vreme (3) */
-  .topbar__left .topbar__item:nth-child(1){ order: 1; }
-  .topbar__left .topbar__item:nth-child(2){ order: 2; }
-  .topbar__left .topbar__item:nth-child(3){ display: none !important; } /* i dalje sakriveno */
-
-  /* Ulepšaj: levo poravnanje umesto centriranja */
-  .topbar__item{
-    justify-content: flex-start !important;
-  }
-
-  /* Desno (socijalne): ispod, centrirano */
-  .topbar__right{
-    width: 100% !important;
-    justify-content: center !important;
-    margin-top: 6px;
-  }
 }
 /* =========================
    HERO (ispod menija)
